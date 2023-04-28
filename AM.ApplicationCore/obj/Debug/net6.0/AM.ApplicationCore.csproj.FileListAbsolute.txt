@@ -1,0 +1,12 @@
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.deps.json
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\bin\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.AssemblyReference.cache
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfoInputs.cache
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.AssemblyInfo.cs
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.csproj.CoreCompileInputs.cache
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.dll
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\refint\AM.ApplicationCore.dll
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\AM.ApplicationCore.pdb
+C:\Users\zakar\Desktop\Revision Dotnet\AirportManagement\AM.ApplicationCore\obj\Debug\net6.0\ref\AM.ApplicationCore.dll
