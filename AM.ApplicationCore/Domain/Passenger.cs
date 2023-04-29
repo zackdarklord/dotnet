@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,22 @@ namespace AM.ApplicationCore.Domain
     public class Passenger
     {
         public int Id { get; set; }
+        [Display(Name ="Date of Birth")]
+        [DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
+        [Key]
+        [StringLength(7)]
         public long PassportNumber { get; set; }
+        [DataType(DataType.EmailAddress)]
         public String EmailAddress { get; set; }
+        [MinLength(3,ErrorMessage = "min 3 caracteres")]
+        [MaxLength(25,ErrorMessage ="max 25 caracteres")]
         public String FirstName { get; set; }
         public String LastName { get; set; }
+        [RegularExpression(@"^\d{8}$", ErrorMessage = "Telephone number must be 8 digits")]
+//8 digits        
         public long TelNumber { get; set; }
+        public FullName FullName { get; set; }  
 
         public List<Flight> Flights { get; set; }
 
