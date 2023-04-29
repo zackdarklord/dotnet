@@ -14,6 +14,8 @@ namespace AM.Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<Flight> builder)
         {
+            builder.Property(f => f.Airline).IsRequired(false);
+            builder.Property(f => f.Departure).IsRequired(false);
             builder.HasMany(f => f.Passengers).WithMany(p=>p.Flights);
             builder.HasOne(f => f.Plane).WithMany(p=>p.Flights).HasForeignKey(f=>f.PlaneId);
         }   

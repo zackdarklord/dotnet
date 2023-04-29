@@ -27,7 +27,8 @@ namespace AM.ApplicationCore.Domain
         public long TelNumber { get; set; }
         public FullName FullName { get; set; }  
 
-        public List<Flight> Flights { get; set; }
+        public virtual ICollection<Flight> Flights { get; set; }
+        public virtual ICollection<Ticket> Tickets { get; set; }
 
         public override string ToString()
         {

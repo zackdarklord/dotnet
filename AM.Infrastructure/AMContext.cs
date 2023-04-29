@@ -13,9 +13,10 @@ namespace AM.Infrastructure
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;
+            optionsBuilder.UseLazyLoadingProxies().UseSqlServer(@"Data Source=(localdb)\mssqllocaldb;
             Initial Catalog=AirportManagementDBzakaria;Integrated Security=true");
             base.OnConfiguring(optionsBuilder);
+
         }
 
         public DbSet<Plane> Planes { get; set; }    
@@ -27,6 +28,11 @@ namespace AM.Infrastructure
             modelBuilder.ApplyConfiguration(new FlightConfiguration()); 
             modelBuilder.ApplyConfiguration(new PlaneConfiguration()); 
             modelBuilder.ApplyConfiguration(new PassengerConfiguration()); 
+            modelBuilder.ApplyConfiguration(new TicketConfigration()); 
+
+            modelBuilder.Entity<Staff>().ToTable("Staff");
+            modelBuilder.Entity<Traveller>().ToTable("Traveller");
+            modelBuilder.Entity<Passenger>().ToTable("Passenger");
         }
         protected override void ConfigureConventions(ModelConfigurationBuilder configurationBuilder)
         {
@@ -40,6 +46,7 @@ namespace AM.Infrastructure
             configurationBuilder
             .Properties<DateTime>()
             .HaveColumnType("date");
+            
 
         }
 

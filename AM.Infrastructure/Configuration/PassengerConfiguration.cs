@@ -13,8 +13,14 @@ namespace AM.Infrastructure.Configuration
     {
         public void Configure(EntityTypeBuilder<Passenger> builder)
         {
-            builder.OwnsOne(p => p.FullName).Property(f=>f.FirstName).HasMaxLength(30).HasColumnName("PassFirstName") ;
-            builder.OwnsOne(p => p.FullName).Property(f=>f.LastName).IsRequired().HasColumnName("PassLastName");
+            builder.OwnsOne(p => p.FullName,
+
+                 j => {
+                     j.Property(f => f.FirstName).HasColumnName("PassFirstname");
+                     j.Property(f => f.LastName).HasColumnName("PassLastname");
+                });
+
+           // builder.HasDiscriminator<int>("isTraveller").HasValue<Passenger>(0).HasValue<Traveller>(1).HasValue<Staff>(2);
 
         }
     }
